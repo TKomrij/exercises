@@ -1,6 +1,6 @@
 using System;
 
-namespace exercises
+namespace classes
 {
     public class Employee
     {

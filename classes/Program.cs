@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace exercises
+namespace classes
 {
     class Program
     {
@@ -10,10 +11,13 @@ namespace exercises
             Console.WriteLine("Welcome to BingBip: A balloon company");
 
             // Create three employees
-            Employee Austin = new Employee("Austin", "Parvin");
-            Employee Emily = new Employee("Emily", "Loggins");
-            Employee Maya = new Employee("Maya", "Pace");
-
+            List<Employee> employees = new List<Employee>
+            {
+               new Employee("Austin", "Parvin"),
+               new Employee("Emily", "Loggins"),
+               new Employee("Maya", "Pace")
+            };
+            Console.WriteLine(employees[0].FullName);
 
             // Assign the employees to the company
 
