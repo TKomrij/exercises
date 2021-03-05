@@ -1,11 +1,13 @@
 using System;
 
-namespace classes
+namespace Classes
 {
     public class Employee
     {
-        public string FirstName { get; }
-        public string LastName { get; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Title { get; set; }
+        public DateTime HireDate { get; set; }
         public string FullName
         {
             get
@@ -13,10 +15,12 @@ namespace classes
                 return $"{FirstName} {LastName}";
             }
         }
-        public Employee(string firstName, string lastName)
+        public Employee(string firstName, string lastName, string title, DateTime hireDate)
         {
             FirstName = firstName;
             LastName = lastName;
+            Title = title;
+            HireDate = hireDate;
         }
 
     }
